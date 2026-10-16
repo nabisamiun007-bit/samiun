@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!-- Created by pdf2htmlEX (https://github.com/pdf2htmlEX/pdf2htmlEX) -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta name="generator" content="pdf2htmlEX"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<style type="text/css">
+/*! 
+ * Base CSS for pdf2htmlEX
+ * Copyright 2012,2013 Lu Wang <coolwanglu@gmail.com> 
+ * https://github.com/pdf2htmlEX/pdf2htmlEX/blob/master/share/LICENSE
+ */#sidebar{position:absolute;top:0;left:0;bottom:0;width:250px;padding:0;margin:0;overflow:auto}#page-container{position:absolute;top:0;left:0;margin:0;padding:0;border:0}@media screen{#sidebar.opened+#page-container{left:250px}#page-container{bottom:0;right:0;overflow:auto}.loading-indicator{display:none}.loading-indicator.active{display:block;position:absolute;width:64px;height:64px;top:50%;left:50%;margin-top:-32px;margin-left:-32px}.loading-indicator img{position:absolute;top:0;left:0;bottom:0;right:0}}@media print{@page{margin:0}html{margin:0}body{margin:0;-webkit-print-color-adjust:exact}#sidebar{display:none}#page-container{width:auto;height:auto;overflow:visible;background-color:transparent}.d{display:none}}.pf{position:relative;background-color:white;overflow:hidden;margin:0;border:0}.pc{position:absolute;border:0;padding:0;margin:0;top:0;left:0;width:100%;height:100%;overflow:hidden;display:block;transform-origin:0 0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0}.pc.opened{display:block}.bf{position:absolute;border:0;margin:0;top:0;bottom:0;width:100%;height:100%;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none}.bi{position:absolute;border:0;margin:0;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none}@media print{.pf{margin:0;box-shadow:none;page-break-after:always;page-break-inside:avoid}@-moz-document url-prefix(){.pf{overflow:visible;border:1px solid #fff}.pc{overflow:visible}}}.c{position:absolute;border:0;padding:0;margin:0;overflow:hidden;display:block}.t{position:absolute;white-space:pre;font-size:1px;transform-origin:0 100%;-ms-transform-origin:0 100%;-webkit-transform-origin:0 100%;unicode-bidi:bidi-override;-moz-font-feature-settings:"liga" 0}.t:after{content:''}.t:before{content:'';display:inline-block}.t span{position:relative;unicode-bidi:bidi-override}._{display:inline-block;color:transparent;z-index:-1}::selection{background:rgba(127,255,255,0.4)}::-moz-selection{background:rgba(127,255,255,0.4)}.pi{display:none}.d{position:absolute;transform-origin:0 100%;-ms-transform-origin:0 100%;-webkit-transform-origin:0 100%}.it{border:0;background-color:rgba(255,255,255,0.0)}.ir:hover{cursor:pointer}</style>
+<style type="text/css">
+/*! 
+ * Fancy styles for pdf2htmlEX
+ * Copyright 2012,2013 Lu Wang <coolwanglu@gmail.com> 
+ * https://github.com/pdf2htmlEX/pdf2htmlEX/blob/master/share/LICENSE
+ */@keyframes fadein{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadein{from{opacity:0}to{opacity:1}}@keyframes swing{0{transform:rotate(0)}10%{transform:rotate(0)}90%{transform:rotate(720deg)}100%{transform:rotate(720deg)}}@-webkit-keyframes swing{0{-webkit-transform:rotate(0)}10%{-webkit-transform:rotate(0)}90%{-webkit-transform:rotate(720deg)}100%{-webkit-transform:rotate(720deg)}}@media screen{#sidebar{background-color:#2f3236;background-image:url("assets/asset_01.svg")}#outline{font-family:Georgia,Times,"Times New Roman",serif;font-size:13px;margin:2em 1em}#outline ul{padding:0}#outline li{list-style-type:none;margin:1em 0}#outline li>ul{margin-left:1em}#outline a,#outline a:visited,#outline a:hover,#outline a:active{line-height:1.2;color:#e8e8e8;text-overflow:ellipsis;white-space:nowrap;text-decoration:none;display:block;overflow:hidden;outline:0}#outline a:hover{color:#0cf}#page-container{background-color:#9e9e9e;background-image:url("assets/asset_02.svg");-webkit-transition:left 500ms;transition:left 500ms}.pf{margin:13px auto;box-shadow:1px 1px 3px 1px #333;border-collapse:separate}.pc.opened{-webkit-animation:fadein 100ms;animation:fadein 100ms}.loading-indicator.active{-webkit-animation:swing 1.5s ease-in-out .01s infinite alternate none;animation:swing 1.5s ease-in-out .01s infinite alternate none}.checked{background:no-repeat url(assets/asset_03.png)}}</style>
+<style type="text/css">
+.ff0{font-family:sans-serif;visibility:hidden;}
+@font-face{font-family:ff1;src:url('assets/asset_04.woff')format("woff");}.ff1{font-family:ff1;line-height:1.051270;font-style:normal;font-weight:normal;visibility:visible;}
+@font-face{font-family:ff2;src:url('assets/asset_05.woff')format("woff");}.ff2{font-family:ff2;line-height:1.052734;font-style:normal;font-weight:normal;visibility:visible;}
+@font-face{font-family:ff3;src:url('assets/asset_06.woff')format("woff");}.ff3{font-family:ff3;line-height:0.983398;font-style:normal;font-weight:normal;visibility:visible;}
+@font-face{font-family:ff4;src:url('assets/asset_07.woff')format("woff");}.ff4{font-family:ff4;line-height:1.052734;font-style:normal;font-weight:normal;visibility:visible;}
+@font-face{font-family:ff5;src:url('assets/asset_08.woff')format("woff");}.ff5{font-family:ff5;line-height:1.213379;font-style:normal;font-weight:normal;visibility:visible;}
+@font-face{font-family:ff6;src:url('assets/asset_09.woff')format("woff");}.ff6{font-family:ff6;line-height:1.051270;font-style:normal;font-weight:normal;visibility:visible;}
+@font-face{font-family:ff7;src:url('assets/asset_10.woff')format("woff");}.ff7{font-family:ff7;line-height:1.051270;font-style:normal;font-weight:normal;visibility:visible;}
+.m0{transform:matrix(0.375000,0.000000,0.000000,0.375000,0,0);-ms-transform:matrix(0.375000,0.000000,0.000000,0.375000,0,0);-webkit-transform:matrix(0.375000,0.000000,0.000000,0.375000,0,0);}
+.m1{transform:matrix(1.500000,0.000000,0.000000,1.500000,0,0);-ms-transform:matrix(1.500000,0.000000,0.000000,1.500000,0,0);-webkit-transform:matrix(1.500000,0.000000,0.000000,1.500000,0,0);}
+.v0{vertical-align:0.000000px;}
+.lsf{letter-spacing:-0.318800px;}
+.ls4{letter-spacing:-0.316800px;}
+.lsa{letter-spacing:-0.143200px;}
+.ls3{letter-spacing:-0.128800px;}
+.ls12{letter-spacing:-0.117200px;}
+.ls8{letter-spacing:-0.071600px;}
+.ls7{letter-spacing:-0.038880px;}
+.ls6{letter-spacing:-0.027360px;}
+.ls11{letter-spacing:-0.012000px;}
+.ls0{letter-spacing:0.000000px;}
+.ls9{letter-spacing:0.000960px;}
+.lsd{letter-spacing:0.042800px;}
+.lsb{letter-spacing:0.044000px;}
+.lse{letter-spacing:0.053600px;}
+.ls10{letter-spacing:0.090400px;}
+.ls2{letter-spacing:0.100000px;}
+.ls5{letter-spacing:0.116000px;}
+.lsc{letter-spacing:0.120000px;}
+.ls1{letter-spacing:0.125600px;}
+.sc_{text-shadow:none;}
+.sc0{text-shadow:-0.015em 0 transparent,0 0.015em transparent,0.015em 0 transparent,0 -0.015em  transparent;}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.sc_{-webkit-text-stroke:0px transparent;}
+.sc0{-webkit-text-stroke:0.015em transparent;text-shadow:none;}
+}
+.ws0{word-spacing:0.000000px;}
+._3{margin-left:-1.133440px;}
+._2{width:1.115520px;}
+._9{width:2.576960px;}
+._0{width:3.835680px;}
+._1{width:4.991520px;}
+._4{width:6.174720px;}
+._5{width:8.089760px;}
+._6{width:17.180160px;}
+._7{width:395.356480px;}
+._b{width:517.288320px;}
+._8{width:668.147200px;}
+._a{width:812.715520px;}
+._d{width:859.200160px;}
+._c{width:896.244160px;}
+.fc6{color:rgb(5,99,193);}
+.fc5{color:transparent;}
+.fc4{color:rgb(91,107,127);}
+.fc3{color:rgb(138,148,163);}
+.fc7{color:rgb(173,173,173);}
+.fc2{color:rgb(116,116,116);}
+.fc1{color:rgb(0,0,0);}
+.fc0{color:rgb(31,58,95);}
+.fs2{font-size:25.920000px;}
+.fs6{font-size:27.840000px;}
+.fs8{font-size:32.160000px;}
+.fs7{font-size:36.000000px;}
+.fs1{font-size:39.840000px;}
+.fs5{font-size:42.240000px;}
+.fs3{font-size:44.160000px;}
+.fs4{font-size:46.080000px;}
+.fs0{font-size:111.840000px;}
+.y0{bottom:0.000000px;}
+.y5d{bottom:3.960000px;}
+.ya{bottom:6.300000px;}
+.y9{bottom:26.820000px;}
+.y5c{bottom:27.540000px;}
+.y5b{bottom:43.020000px;}
+.y8{bottom:47.340000px;}
+.y5a{bottom:67.320000px;}
+.y7{bottom:73.620000px;}
+.yc{bottom:85.680000px;}
+.y59{bottom:88.740000px;}
+.y6{bottom:93.780000px;}
+.yb{bottom:104.040000px;}
+.y58{bottom:109.620000px;}
+.y5{bottom:116.460000px;}
+.y32{bottom:116.676000px;}
+.y57{bottom:126.405000px;}
+.y3{bottom:134.640000px;}
+.y5e{bottom:134.865000px;}
+.y31{bottom:137.916000px;}
+.y4{bottom:139.890000px;}
+.y60{bottom:140.796000px;}
+.y56{bottom:147.465000px;}
+.y30{bottom:159.150000px;}
+.y2{bottom:160.410000px;}
+.y55{bottom:164.205000px;}
+.y2f{bottom:180.570000px;}
+.y54{bottom:185.625000px;}
+.y5f{bottom:190.110000px;}
+.y2e{bottom:201.810000px;}
+.y53{bottom:223.050000px;}
+.y2d{bottom:223.770000px;}
+.y2c{bottom:242.490000px;}
+.y2b{bottom:268.950000px;}
+.y2a{bottom:290.190000px;}
+.y29{bottom:311.610000px;}
+.y28{bottom:332.850000px;}
+.y27{bottom:354.135000px;}
+.y26{bottom:376.095000px;}
+.y25{bottom:394.815000px;}
+.y24{bottom:421.275000px;}
+.y52{bottom:439.455000px;}
+.y23{bottom:442.695000px;}
+.y22{bottom:463.935000px;}
+.y51{bottom:476.355000px;}
+.y21{bottom:485.175000px;}
+.y50{bottom:494.715000px;}
+.y20{bottom:507.135000px;}
+.y4f{bottom:517.575000px;}
+.y1f{bottom:525.855000px;}
+.y4e{bottom:548.355000px;}
+.y1e{bottom:557.175000px;}
+.y4d{bottom:585.435000px;}
+.y1d{bottom:594.435000px;}
+.y4c{bottom:606.885000px;}
+.y1c{bottom:615.705000px;}
+.y4b{bottom:625.065000px;}
+.y1a{bottom:637.125000px;}
+.y1b{bottom:642.345000px;}
+.y4a{bottom:646.485000px;}
+.y19{bottom:658.365000px;}
+.y49{bottom:664.665000px;}
+.y18{bottom:689.145000px;}
+.y47{bottom:692.925000px;}
+.y48{bottom:698.145000px;}
+.y46{bottom:718.665000px;}
+.y17{bottom:726.225000px;}
+.y45{bottom:735.765000px;}
+.y16{bottom:761.505000px;}
+.y44{bottom:761.865000px;}
+.y15{bottom:781.665000px;}
+.y43{bottom:793.365000px;}
+.y14{bottom:801.645000px;}
+.y13{bottom:821.805000px;}
+.y42{bottom:830.265000px;}
+.y12{bottom:841.965000px;}
+.y41{bottom:852.225000px;}
+.y11{bottom:862.125000px;}
+.y40{bottom:874.410000px;}
+.y10{bottom:882.330000px;}
+.y3f{bottom:896.550000px;}
+.yf{bottom:902.490000px;}
+.y3e{bottom:918.510000px;}
+.ye{bottom:938.490000px;}
+.y3d{bottom:940.650000px;}
+.y3c{bottom:962.610000px;}
+.yd{bottom:969.630000px;}
+.y3b{bottom:980.970000px;}
+.y1{bottom:1002.570000px;}
+.y3a{bottom:1003.110000px;}
+.y39{bottom:1034.070000px;}
+.y38{bottom:1070.970000px;}
+.y37{bottom:1092.930000px;}
+.y36{bottom:1115.070000px;}
+.y35{bottom:1133.430000px;}
+.y34{bottom:1155.420000px;}
+.y33{bottom:1186.380000px;}
+.hc{height:22.402500px;}
+.h5{height:22.629375px;}
+.he{height:28.124297px;}
+.h4{height:34.782188px;}
+.h6{height:34.840547px;}
+.h9{height:35.535000px;}
+.ha{height:36.260625px;}
+.hb{height:36.877500px;}
+.h7{height:38.618437px;}
+.h8{height:40.230000px;}
+.h3{height:97.641562px;}
+.hd{height:199.830000px;}
+.h2{height:200.370000px;}
+.h0{height:1262.880000px;}
+.h1{height:1263.000000px;}
+.w3{width:202.890000px;}
+.w6{width:218.010000px;}
+.w5{width:524.985000px;}
+.w2{width:540.105000px;}
+.w4{width:892.979987px;}
+.w0{width:892.980000px;}
+.w1{width:893.250000px;}
+.x0{left:0.000000px;}
+.xb{left:9.720000px;}
+.xc{left:27.756000px;}
+.x2{left:65.736000px;}
+.x1{left:75.060000px;}
+.x5{left:84.059987px;}
+.x8{left:102.095987px;}
+.x6{left:109.655987px;}
+.x7{left:120.095987px;}
+.x4{left:202.185000px;}
+.x9{left:261.209987px;}
+.xa{left:272.009987px;}
+.xd{left:600.045000px;}
+.x3{left:615.165000px;}
+@media print{
+.v0{vertical-align:0.000000pt;}
+.lsf{letter-spacing:-0.283378pt;}
+.ls4{letter-spacing:-0.281600pt;}
+.lsa{letter-spacing:-0.127289pt;}
+.ls3{letter-spacing:-0.114489pt;}
+.ls12{letter-spacing:-0.104178pt;}
+.ls8{letter-spacing:-0.063644pt;}
+.ls7{letter-spacing:-0.034560pt;}
+.ls6{letter-spacing:-0.024320pt;}
+.ls11{letter-spacing:-0.010667pt;}
+.ls0{letter-spacing:0.000000pt;}
+.ls9{letter-spacing:0.000853pt;}
+.lsd{letter-spacing:0.038044pt;}
+.lsb{letter-spacing:0.039111pt;}
+.lse{letter-spacing:0.047644pt;}
+.ls10{letter-spacing:0.080356pt;}
+.ls2{letter-spacing:0.088889pt;}
+.ls5{letter-spacing:0.103111pt;}
+.lsc{letter-spacing:0.106667pt;}
+.ls1{letter-spacing:0.111644pt;}
+.ws0{word-spacing:0.000000pt;}
+._3{margin-left:-1.007502pt;}
+._2{width:0.991573pt;}
+._9{width:2.290631pt;}
+._0{width:3.409493pt;}
+._1{width:4.436907pt;}
+._4{width:5.488640pt;}
+._5{width:7.190898pt;}
+._6{width:15.271253pt;}
+._7{width:351.427982pt;}
+._b{width:459.811840pt;}
+._8{width:593.908622pt;}
+._a{width:722.413796pt;}
+._d{width:763.733476pt;}
+._c{width:796.661476pt;}
+.fs2{font-size:23.040000pt;}
+.fs6{font-size:24.746667pt;}
+.fs8{font-size:28.586667pt;}
+.fs7{font-size:32.000000pt;}
+.fs1{font-size:35.413333pt;}
+.fs5{font-size:37.546667pt;}
+.fs3{font-size:39.253333pt;}
+.fs4{font-size:40.960000pt;}
+.fs0{font-size:99.413333pt;}
+.y0{bottom:0.000000pt;}
+.y5d{bottom:3.520000pt;}
+.ya{bottom:5.600000pt;}
+.y9{bottom:23.840000pt;}
+.y5c{bottom:24.480000pt;}
+.y5b{bottom:38.240000pt;}
+.y8{bottom:42.080000pt;}
+.y5a{bottom:59.840000pt;}
+.y7{bottom:65.440000pt;}
+.yc{bottom:76.160000pt;}
+.y59{bottom:78.880000pt;}
+.y6{bottom:83.360000pt;}
+.yb{bottom:92.480000pt;}
+.y58{bottom:97.440000pt;}
+.y5{bottom:103.520000pt;}
+.y32{bottom:103.712000pt;}
+.y57{bottom:112.360000pt;}
+.y3{bottom:119.680000pt;}
+.y5e{bottom:119.880000pt;}
+.y31{bottom:122.592000pt;}
+.y4{bottom:124.346667pt;}
+.y60{bottom:125.152000pt;}
+.y56{bottom:131.080000pt;}
+.y30{bottom:141.466667pt;}
+.y2{bottom:142.586667pt;}
+.y55{bottom:145.960000pt;}
+.y2f{bottom:160.506667pt;}
+.y54{bottom:165.000000pt;}
+.y5f{bottom:168.986667pt;}
+.y2e{bottom:179.386667pt;}
+.y53{bottom:198.266667pt;}
+.y2d{bottom:198.906667pt;}
+.y2c{bottom:215.546667pt;}
+.y2b{bottom:239.066667pt;}
+.y2a{bottom:257.946667pt;}
+.y29{bottom:276.986667pt;}
+.y28{bottom:295.866667pt;}
+.y27{bottom:314.786667pt;}
+.y26{bottom:334.306667pt;}
+.y25{bottom:350.946667pt;}
+.y24{bottom:374.466667pt;}
+.y52{bottom:390.626667pt;}
+.y23{bottom:393.506667pt;}
+.y22{bottom:412.386667pt;}
+.y51{bottom:423.426667pt;}
+.y21{bottom:431.266667pt;}
+.y50{bottom:439.746667pt;}
+.y20{bottom:450.786667pt;}
+.y4f{bottom:460.066667pt;}
+.y1f{bottom:467.426667pt;}
+.y4e{bottom:487.426667pt;}
+.y1e{bottom:495.266667pt;}
+.y4d{bottom:520.386667pt;}
+.y1d{bottom:528.386667pt;}
+.y4c{bottom:539.453333pt;}
+.y1c{bottom:547.293333pt;}
+.y4b{bottom:555.613333pt;}
+.y1a{bottom:566.333333pt;}
+.y1b{bottom:570.973333pt;}
+.y4a{bottom:574.653333pt;}
+.y19{bottom:585.213333pt;}
+.y49{bottom:590.813333pt;}
+.y18{bottom:612.573333pt;}
+.y47{bottom:615.933333pt;}
+.y48{bottom:620.573333pt;}
+.y46{bottom:638.813333pt;}
+.y17{bottom:645.533333pt;}
+.y45{bottom:654.013333pt;}
+.y16{bottom:676.893333pt;}
+.y44{bottom:677.213333pt;}
+.y15{bottom:694.813333pt;}
+.y43{bottom:705.213333pt;}
+.y14{bottom:712.573333pt;}
+.y13{bottom:730.493333pt;}
+.y42{bottom:738.013333pt;}
+.y12{bottom:748.413333pt;}
+.y41{bottom:757.533333pt;}
+.y11{bottom:766.333333pt;}
+.y40{bottom:777.253333pt;}
+.y10{bottom:784.293333pt;}
+.y3f{bottom:796.933333pt;}
+.yf{bottom:802.213333pt;}
+.y3e{bottom:816.453333pt;}
+.ye{bottom:834.213333pt;}
+.y3d{bottom:836.133333pt;}
+.y3c{bottom:855.653333pt;}
+.yd{bottom:861.893333pt;}
+.y3b{bottom:871.973333pt;}
+.y1{bottom:891.173333pt;}
+.y3a{bottom:891.653333pt;}
+.y39{bottom:919.173333pt;}
+.y38{bottom:951.973333pt;}
+.y37{bottom:971.493333pt;}
+.y36{bottom:991.173333pt;}
+.y35{bottom:1007.493333pt;}
+.y34{bottom:1027.040000pt;}
+.y33{bottom:1054.560000pt;}
+.hc{height:19.913333pt;}
+.h5{height:20.115000pt;}
+.he{height:24.999375pt;}
+.h4{height:30.917500pt;}
+.h6{height:30.969375pt;}
+.h9{height:31.586667pt;}
+.ha{height:32.231667pt;}
+.hb{height:32.780000pt;}
+.h7{height:34.327500pt;}
+.h8{height:35.760000pt;}
+.h3{height:86.792500pt;}
+.hd{height:177.626667pt;}
+.h2{height:178.106667pt;}
+.h0{height:1122.560000pt;}
+.h1{height:1122.666667pt;}
+.w3{width:180.346667pt;}
+.w6{width:193.786667pt;}
+.w5{width:466.653333pt;}
+.w2{width:480.093333pt;}
+.w4{width:793.759988pt;}
+.w0{width:793.760000pt;}
+.w1{width:794.000000pt;}
+.x0{left:0.000000pt;}
+.xb{left:8.640000pt;}
+.xc{left:24.672000pt;}
+.x2{left:58.432000pt;}
+.x1{left:66.720000pt;}
+.x5{left:74.719988pt;}
+.x8{left:90.751988pt;}
+.x6{left:97.471988pt;}
+.x7{left:106.751988pt;}
+.x4{left:179.720000pt;}
+.x9{left:232.186655pt;}
+.xa{left:241.786655pt;}
+.xd{left:533.373333pt;}
+.x3{left:546.813333pt;}
+}
+</style>
+<script>
+/*
+ Copyright 2012 Mozilla Foundation 
+ Copyright 2013 Lu Wang <coolwanglu@gmail.com>
+ Apachine License Version 2.0 
+*/
+(function(){function b(a,b,e,f){var c=(a.className||"").split(/\s+/g);""===c[0]&&c.shift();var d=c.indexOf(b);0>d&&e&&c.push(b);0<=d&&f&&c.splice(d,1);a.className=c.join(" ");return 0<=d}if(!("classList"in document.createElement("div"))){var e={add:function(a){b(this.element,a,!0,!1)},contains:function(a){return b(this.element,a,!1,!1)},remove:function(a){b(this.element,a,!1,!0)},toggle:function(a){b(this.element,a,!0,!0)}};Object.defineProperty(HTMLElement.prototype,"classList",{get:function(){if(this._classList)return this._classList;
+var a=Object.create(e,{element:{value:this,writable:!1,enumerable:!0}});Object.defineProperty(this,"_classList",{value:a,writable:!1,enumerable:!1});return a},enumerable:!0})}})();
+</script>
+<script>
+(function(){/*
+ pdf2htmlEX.js: Core UI functions for pdf2htmlEX 
+ Copyright 2012,2013 Lu Wang <coolwanglu@gmail.com> and other contributors 
+ https://github.com/pdf2htmlEX/pdf2htmlEX/blob/master/share/LICENSE 
+*/
+var pdf2htmlEX=window.pdf2htmlEX=window.pdf2htmlEX||{},CSS_CLASS_NAMES={page_frame:"pf",page_content_box:"pc",page_data:"pi",background_image:"bi",link:"l",input_radio:"ir",__dummy__:"no comma"},DEFAULT_CONFIG={container_id:"page-container",sidebar_id:"sidebar",outline_id:"outline",loading_indicator_cls:"loading-indicator",preload_pages:3,render_timeout:100,scale_step:0.9,key_handler:!0,hashchange_handler:!0,view_history_handler:!0,__dummy__:"no comma"},EPS=1E-6;
+function invert(a){var b=a[0]*a[3]-a[1]*a[2];return[a[3]/b,-a[1]/b,-a[2]/b,a[0]/b,(a[2]*a[5]-a[3]*a[4])/b,(a[1]*a[4]-a[0]*a[5])/b]}function transform(a,b){return[a[0]*b[0]+a[2]*b[1]+a[4],a[1]*b[0]+a[3]*b[1]+a[5]]}function get_page_number(a){return parseInt(a.getAttribute("data-page-no"),16)}function disable_dragstart(a){for(var b=0,c=a.length;b<c;++b)a[b].addEventListener("dragstart",function(){return!1},!1)}
+function clone_and_extend_objs(a){for(var b={},c=0,e=arguments.length;c<e;++c){var h=arguments[c],d;for(d in h)h.hasOwnProperty(d)&&(b[d]=h[d])}return b}
+function Page(a){if(a){this.shown=this.loaded=!1;this.page=a;this.num=get_page_number(a);this.original_height=a.clientHeight;this.original_width=a.clientWidth;var b=a.getElementsByClassName(CSS_CLASS_NAMES.page_content_box)[0];b&&(this.content_box=b,this.original_scale=this.cur_scale=this.original_height/b.clientHeight,this.page_data=JSON.parse(a.getElementsByClassName(CSS_CLASS_NAMES.page_data)[0].getAttribute("data-data")),this.ctm=this.page_data.ctm,this.ictm=invert(this.ctm),this.loaded=!0)}}
+Page.prototype={hide:function(){this.loaded&&this.shown&&(this.content_box.classList.remove("opened"),this.shown=!1)},show:function(){this.loaded&&!this.shown&&(this.content_box.classList.add("opened"),this.shown=!0)},rescale:function(a){this.cur_scale=0===a?this.original_scale:a;this.loaded&&(a=this.content_box.style,a.msTransform=a.webkitTransform=a.transform="scale("+this.cur_scale.toFixed(3)+")");a=this.page.style;a.height=this.original_height*this.cur_scale+"px";a.width=this.original_width*this.cur_scale+
+"px"},view_position:function(){var a=this.page,b=a.parentNode;return[b.scrollLeft-a.offsetLeft-a.clientLeft,b.scrollTop-a.offsetTop-a.clientTop]},height:function(){return this.page.clientHeight},width:function(){return this.page.clientWidth}};function Viewer(a){this.config=clone_and_extend_objs(DEFAULT_CONFIG,0<arguments.length?a:{});this.pages_loading=[];this.init_before_loading_content();var b=this;document.addEventListener("DOMContentLoaded",function(){b.init_after_loading_content()},!1)}
+Viewer.prototype={scale:1,cur_page_idx:0,first_page_idx:0,init_before_loading_content:function(){this.pre_hide_pages()},initialize_radio_button:function(){for(var a=document.getElementsByClassName(CSS_CLASS_NAMES.input_radio),b=0;b<a.length;b++)a[b].addEventListener("click",function(){this.classList.toggle("checked")})},init_after_loading_content:function(){this.sidebar=document.getElementById(this.config.sidebar_id);this.outline=document.getElementById(this.config.outline_id);this.container=document.getElementById(this.config.container_id);
+this.loading_indicator=document.getElementsByClassName(this.config.loading_indicator_cls)[0];for(var a=!0,b=this.outline.childNodes,c=0,e=b.length;c<e;++c)if("ul"===b[c].nodeName.toLowerCase()){a=!1;break}a||this.sidebar.classList.add("opened");this.find_pages();if(0!=this.pages.length){disable_dragstart(document.getElementsByClassName(CSS_CLASS_NAMES.background_image));this.config.key_handler&&this.register_key_handler();var h=this;this.config.hashchange_handler&&window.addEventListener("hashchange",
+function(a){h.navigate_to_dest(document.location.hash.substring(1))},!1);this.config.view_history_handler&&window.addEventListener("popstate",function(a){a.state&&h.navigate_to_dest(a.state)},!1);this.container.addEventListener("scroll",function(){h.update_page_idx();h.schedule_render(!0)},!1);[this.outline].concat(Array.from(this.container.querySelectorAll("a.l"))).forEach(function(a){a.addEventListener("click",h.link_handler.bind(h),!1)});this.initialize_radio_button();this.render()}},find_pages:function(){for(var a=
+[],b={},c=this.container.childNodes,e=0,h=c.length;e<h;++e){var d=c[e];d.nodeType===Node.ELEMENT_NODE&&d.classList.contains(CSS_CLASS_NAMES.page_frame)&&(d=new Page(d),a.push(d),b[d.num]=a.length-1)}this.pages=a;this.page_map=b},load_page:function(a,b,c){var e=this.pages;if(!(a>=e.length||(e=e[a],e.loaded||this.pages_loading[a]))){var e=e.page,h=e.getAttribute("data-page-url");if(h){this.pages_loading[a]=!0;var d=e.getElementsByClassName(this.config.loading_indicator_cls)[0];"undefined"===typeof d&&
+(d=this.loading_indicator.cloneNode(!0),d.classList.add("active"),e.appendChild(d));var f=this,g=new XMLHttpRequest;g.open("GET",h,!0);g.onload=function(){if(200===g.status||0===g.status){var b=document.createElement("div");b.innerHTML=g.responseText;for(var d=null,b=b.childNodes,e=0,h=b.length;e<h;++e){var p=b[e];if(p.nodeType===Node.ELEMENT_NODE&&p.classList.contains(CSS_CLASS_NAMES.page_frame)){d=p;break}}b=f.pages[a];f.container.replaceChild(d,b.page);b=new Page(d);f.pages[a]=b;b.hide();b.rescale(f.scale);
+disable_dragstart(d.getElementsByClassName(CSS_CLASS_NAMES.background_image));f.schedule_render(!1);c&&c(b)}delete f.pages_loading[a]};g.send(null)}void 0===b&&(b=this.config.preload_pages);0<--b&&(f=this,setTimeout(function(){f.load_page(a+1,b)},0))}},pre_hide_pages:function(){var a="@media screen{."+CSS_CLASS_NAMES.page_content_box+"{display:none;}}",b=document.createElement("style");b.styleSheet?b.styleSheet.cssText=a:b.appendChild(document.createTextNode(a));document.head.appendChild(b)},render:function(){for(var a=
+this.container,b=a.scrollTop,c=a.clientHeight,a=b-c,b=b+c+c,c=this.pages,e=0,h=c.length;e<h;++e){var d=c[e],f=d.page,g=f.offsetTop+f.clientTop,f=g+f.clientHeight;g<=b&&f>=a?d.loaded?d.show():this.load_page(e):d.hide()}},update_page_idx:function(){var a=this.pages,b=a.length;if(!(2>b)){for(var c=this.container,e=c.scrollTop,c=e+c.clientHeight,h=-1,d=b,f=d-h;1<f;){var g=h+Math.floor(f/2),f=a[g].page;f.offsetTop+f.clientTop+f.clientHeight>=e?d=g:h=g;f=d-h}this.first_page_idx=d;for(var g=h=this.cur_page_idx,
+k=0;d<b;++d){var f=a[d].page,l=f.offsetTop+f.clientTop,f=f.clientHeight;if(l>c)break;f=(Math.min(c,l+f)-Math.max(e,l))/f;if(d===h&&Math.abs(f-1)<=EPS){g=h;break}f>k&&(k=f,g=d)}this.cur_page_idx=g}},schedule_render:function(a){if(void 0!==this.render_timer){if(!a)return;clearTimeout(this.render_timer)}var b=this;this.render_timer=setTimeout(function(){delete b.render_timer;b.render()},this.config.render_timeout)},register_key_handler:function(){var a=this;window.addEventListener("DOMMouseScroll",function(b){if(b.ctrlKey){b.preventDefault();
+var c=a.container,e=c.getBoundingClientRect(),c=[b.clientX-e.left-c.clientLeft,b.clientY-e.top-c.clientTop];a.rescale(Math.pow(a.config.scale_step,b.detail),!0,c)}},!1);window.addEventListener("keydown",function(b){var c=!1,e=b.ctrlKey||b.metaKey,h=b.altKey;switch(b.keyCode){case 61:case 107:case 187:e&&(a.rescale(1/a.config.scale_step,!0),c=!0);break;case 173:case 109:case 189:e&&(a.rescale(a.config.scale_step,!0),c=!0);break;case 48:e&&(a.rescale(0,!1),c=!0);break;case 33:h?a.scroll_to(a.cur_page_idx-
+1):a.container.scrollTop-=a.container.clientHeight;c=!0;break;case 34:h?a.scroll_to(a.cur_page_idx+1):a.container.scrollTop+=a.container.clientHeight;c=!0;break;case 35:a.container.scrollTop=a.container.scrollHeight;c=!0;break;case 36:a.container.scrollTop=0,c=!0}c&&b.preventDefault()},!1)},rescale:function(a,b,c){var e=this.scale;this.scale=a=0===a?1:b?e*a:a;c||(c=[0,0]);b=this.container;c[0]+=b.scrollLeft;c[1]+=b.scrollTop;for(var h=this.pages,d=h.length,f=this.first_page_idx;f<d;++f){var g=h[f].page;
+if(g.offsetTop+g.clientTop>=c[1])break}g=f-1;0>g&&(g=0);var g=h[g].page,k=g.clientWidth,f=g.clientHeight,l=g.offsetLeft+g.clientLeft,m=c[0]-l;0>m?m=0:m>k&&(m=k);k=g.offsetTop+g.clientTop;c=c[1]-k;0>c?c=0:c>f&&(c=f);for(f=0;f<d;++f)h[f].rescale(a);b.scrollLeft+=m/e*a+g.offsetLeft+g.clientLeft-m-l;b.scrollTop+=c/e*a+g.offsetTop+g.clientTop-c-k;this.schedule_render(!0)},fit_width:function(){var a=this.cur_page_idx;this.rescale(this.container.clientWidth/this.pages[a].width(),!0);this.scroll_to(a)},fit_height:function(){var a=
+this.cur_page_idx;this.rescale(this.container.clientHeight/this.pages[a].height(),!0);this.scroll_to(a)},get_containing_page:function(a){for(;a;){if(a.nodeType===Node.ELEMENT_NODE&&a.classList.contains(CSS_CLASS_NAMES.page_frame)){a=get_page_number(a);var b=this.page_map;return a in b?this.pages[b[a]]:null}a=a.parentNode}return null},link_handler:function(a){var b=a.target,c=b.getAttribute("data-dest-detail");c||(b=a.currentTarget,c=b.getAttribute("data-dest-detail"));if(c){if(this.config.view_history_handler)try{var e=
+this.get_current_view_hash();window.history.replaceState(e,"","#"+e);window.history.pushState(c,"","#"+c)}catch(h){}this.navigate_to_dest(c,this.get_containing_page(b));a.preventDefault()}},navigate_to_dest:function(a,b){try{var c=JSON.parse(a)}catch(e){return}if(c instanceof Array){var h=c[0],d=this.page_map;if(h in d){for(var f=d[h],h=this.pages[f],d=2,g=c.length;d<g;++d){var k=c[d];if(null!==k&&"number"!==typeof k)return}for(;6>c.length;)c.push(null);var g=b||this.pages[this.cur_page_idx],d=g.view_position(),
+d=transform(g.ictm,[d[0],g.height()-d[1]]),g=this.scale,l=[0,0],m=!0,k=!1,n=this.scale;switch(c[1]){case "XYZ":l=[null===c[2]?d[0]:c[2]*n,null===c[3]?d[1]:c[3]*n];g=c[4];if(null===g||0===g)g=this.scale;k=!0;break;case "Fit":case "FitB":l=[0,0];k=!0;break;case "FitH":case "FitBH":l=[0,null===c[2]?d[1]:c[2]*n];k=!0;break;case "FitV":case "FitBV":l=[null===c[2]?d[0]:c[2]*n,0];k=!0;break;case "FitR":l=[c[2]*n,c[5]*n],m=!1,k=!0}if(k){this.rescale(g,!1);var p=this,c=function(a){l=transform(a.ctm,l);m&&
+(l[1]=a.height()-l[1]);p.scroll_to(f,l)};h.loaded?c(h):(this.load_page(f,void 0,c),this.scroll_to(f))}}}},scroll_to:function(a,b){var c=this.pages;if(!(0>a||a>=c.length)){c=c[a].view_position();void 0===b&&(b=[0,0]);var e=this.container;e.scrollLeft+=b[0]-c[0];e.scrollTop+=b[1]-c[1]}},get_current_view_hash:function(){var a=[],b=this.pages[this.cur_page_idx];a.push(b.num);a.push("XYZ");var c=b.view_position(),c=transform(b.ictm,[c[0],b.height()-c[1]]);a.push(c[0]/this.scale);a.push(c[1]/this.scale);
+a.push(this.scale);return JSON.stringify(a)}};pdf2htmlEX.Viewer=Viewer;})();
+</script>
+<script>
+try{
+pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
+}catch(e){}
+</script>
+<title></title>
+</head>
+<body>
+<div id="sidebar">
+<div id="outline">
+</div>
+</div>
+<div id="page-container">
+<div id="pf1" class="pf w0 h0" data-page-no="1"><div class="pc pc1 w0 h0"><img class="bi x0 y0 w1 h1" alt="" src="assets/asset_11.png"/><div class="c x1 y1 w2 h2"><div class="t m0 x0 h3 y2 ff1 fs0 fc0 sc0 ls0 ws0">S<span class="_ _0"></span>a<span class="_ _0"></span>m<span class="_ _0"></span>i<span class="_ _0"></span>u<span class="_ _0"></span>n<span class="_ _0"></span> <span class="_ _0"></span>N<span class="_ _0"></span>a<span class="_ _0"></span>b<span class="_ _1"></span>i<span class="_ _1"></span> </div><div class="t m0 x0 h4 y3 ff1 fs1 fc1 sc0 ls0 ws0">Student (6</div><div class="t m0 x2 h5 y4 ff1 fs2 fc1 sc0 ls1 ws0">th</div><div class="t m0 x1 h6 y3 ff1 fs1 fc1 sc0 ls0 ws0">/13), Daffodil University School and<span class="_ _2"></span> College<span class="_ _2"></span> (DUSC)<span class="ff2"> </span></div><div class="t m0 x0 h6 y5 ff2 fs1 fc1 sc0 ls0 ws0"> </div><div class="t m0 x0 h7 y6 ff2 fs3 fc1 sc0 ls0 ws0">Student Innovator<span class="ls2">  </span>|  <span class="ls3">AI<span class="_ _3"></span><span class="ls0">/<span class="ls4">ML</span> Enthusiast<span class="ls2">  </span>|<span class="fs1 ls5">  <span class="ls6">AI<span class="ls0">-Assisted Development</span></span>  <span class="_ _2"></span><span class="ls0"> </span></span></span></span></div><div class="t m0 x0 h7 y7 ff2 fs1 fc1 sc0 ls0 ws0">| STEM &amp; IoT Projects  <span class="_ _2"></span><span class="fs3">|  Project Management  | </span>Creative Media  | </div><div class="t m0 x0 h6 y8 ff2 fs1 fc2 sc0 ls0 ws0">Mirpur, Dhaka,<span class="_ _2"></span> Bangladesh-1216   <span class="_ _2"></span>|   +8801<span class="ls7">855<span class="_ _2"></span></span>-277110 </div><div class="t m0 x0 h6 y9 ff3 fs1 fc2 sc0 ls0 ws0">nabisamiun007@gmail.co<span class="_ _2"></span>m<span class="ff2 ls5">   <span class="ls0">|   link<span class="_ _2"></span>edin.com/in/samiun<span class="_ _2"></span>-nabi/ </span></span></div><div class="t m0 x0 h6 ya ff2 fs1 fc2 sc0 ls0 ws0"> </div></div><div class="c x3 y1 w3 h2"><div class="t m0 x4 h6 yb ff2 fs1 fc1 sc0 ls0 ws0"> </div><div class="t m0 x0 h6 yc ff2 fs1 fc1 sc0 ls0 ws0"><span class="fc5 sc0"> </span></div></div><div class="c x0 y0 w4 h0"><div class="t m0 x1 h8 yd ff1 fs4 fc0 sc0 ls0 ws0">P<span class="_ _4"> </span>R<span class="_ _1"></span>O<span class="_ _4"> </span>F<span class="_ _4"> </span>E<span class="_ _4"> </span>S<span class="_ _4"> </span>S<span class="_ _1"></span>I<span class="_ _4"> </span>O<span class="_ _4"> </span>N<span class="_ _4"> </span>A<span class="_ _1"></span>L<span class="_ _4"> </span> <span class="_ _4"> </span>S<span class="_ _4"></span>U<span class="_ _4"> </span>M<span class="_ _1"></span>M<span class="_ _4"> </span>A<span class="_ _4"> </span>R<span class="_ _4"> </span>Y<span class="_ _4"> </span><span class="ff2 fs1 fc1"> </span></div><div class="t m0 x1 h6 ye ff2 fs1 fc1 sc0 ls0 ws0"> </div><div class="t m0 x1 h9 yf ff3 fs3 fc1 sc0 ls0 ws0">An ambitious stud<span class="_ _3"></span>ent, STEM enthusias<span class="_ _3"></span>t, and aspiring<span class="_ _3"></span> entrepreneur<span class="_ _3"></span> with a strong <span class="_ _3"></span>foundation<span class="_ _3"></span> in mathematics, </div><div class="t m0 x1 h9 y10 ff3 fs3 fc1 sc0 ls0 ws0">technology, and<span class="_ _3"></span> innovation. A BdM<span class="_ _3"></span>SO Medal Winner, <span class="_ _3"></span>Government Sch<span class="_ _3"></span>olarship hold<span class="_ _3"></span>er, with 20+ certificates </div><div class="t m0 x1 h9 y11 ff3 fs3 fc1 sc0 ls0 ws0">across diverse field<span class="_ _3"></span>s, includin<span class="_ _3"></span>g 3+ Google Professiona<span class="_ _3"></span>l Certificates. Po<span class="_ _3"></span>ssesses hand<span class="_ _3"></span>s-on experience in </div><div class="t m0 x1 h9 y12 ff3 fs3 fc1 sc0 ls0 ws0">cybersecurity, AI and<span class="_ _3"></span> prompt eng<span class="_ _3"></span>ineering, IoT develo<span class="_ _3"></span>pment, softwa<span class="_ _3"></span>re projects, co<span class="_ _3"></span>ntent creation, video edi<span class="_ _3"></span>ting, </div><div class="t m0 x1 h9 y13 ff3 fs3 fc1 sc0 ls0 ws0">graphic design, an<span class="_ _3"></span>d project management. <span class="_ _3"></span>Demonstrat<span class="_ _3"></span>es strong skills in <span class="_ _3"></span>technical do<span class="_ _3"></span>cumentation, persuasive<span class="_ _3"></span> </div><div class="t m0 x1 h9 y14 ff3 fs3 fc1 sc0 ls0 ws0">English-langu<span class="_ _3"></span>age pitching, creative p<span class="_ _3"></span>roblem-solving, a<span class="_ _3"></span>nd project coordin<span class="_ _3"></span>ation. Pa<span class="_ _3"></span>ssionate about scien<span class="_ _3"></span>tific </div><div class="t m0 x1 h9 y15 ff3 fs3 fc1 sc0 ls0 ws0">research, entrep<span class="_ _3"></span>reneurship, and develo<span class="_ _3"></span>ping technolog<span class="_ _3"></span>y-driven solutions that ad<span class="_ _3"></span>dress real-world cha<span class="_ _3"></span>llenges, </div><div class="t m0 x1 h9 y16 ff3 fs3 fc1 sc0 ls0 ws0">while bringing cr<span class="_ _3"></span>eativity, initiative, an<span class="_ _3"></span>d a collaborativ<span class="_ _3"></span>e mindset to ev<span class="_ _3"></span>ery project. </div><div class="t m0 x1 h6 y17 ff2 fs1 fc1 sc0 ls0 ws0"> </div><div class="t m0 x1 h8 y18 ff1 fs4 fc0 sc0 ls0 ws0">A<span class="_ _4"> </span>C<span class="_ _1"></span>H<span class="_ _4"> </span>I<span class="_ _4"> </span>E<span class="_ _4"></span>V<span class="_ _1"></span>E<span class="_ _4"> </span>M<span class="_ _4"> </span>E<span class="_ _4"> </span>N<span class="_ _4"></span>T<span class="_ _1"></span>S<span class="_ _4"> </span> <span class="_ _4"> </span>&amp;<span class="_ _4"> </span> <span class="_ _1"></span>A<span class="_ _4"> </span>W<span class="_ _4"> </span>A<span class="_ _1"></span>R<span class="_ _4"> </span>D<span class="_ _5"> </span>S<span class="_ _1"></span><span class="ff2 fs1 fc1"> </span></div><div class="t m0 x5 ha y19 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff1 fc1">Champion, DUSC Science<span class="_ _2"></span> Fair<span class="_ _2"></span><span class="ff2"> <span class="ls8">(2025)</span> </span></span></span></div><div class="t m0 x5 ha y1a ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff1 fc1">2</span></span></div><div class="t m0 x6 h5 y1b ff1 fs2 fc1 sc0 ls9 ws0">nd</div><div class="t m0 x7 h6 y1a ff1 fs1 fc1 sc0 ls0 ws0"> Place, DUSC Science<span class="_ _2"></span> Fair<span class="ff2"> <span class="ls8">(2026)<span class="_ _2"></span></span> </span></div><div class="t m0 x5 ha y1c ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff1 fc1">Medal Winner, Bd<span class="_ _2"></span>MSO National Round<span class="_ _2"></span><span class="ff2"> <span class="ls8">(2026)</span> </span></span></span></div><div class="t m0 x5 ha y1d ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff1 fc1">Recipient, Governme<span class="_ _2"></span>nt Primary Scholarship<span class="_ _2"></span><span class="ff2"> <span class="ff4">–</span> Banglade<span class="_ _2"></span>sh </span></span></span></div><div class="t m0 x1 h8 y1e ff1 fs4 fc0 sc0 ls0 ws0">P<span class="_ _4"> </span>R<span class="_ _1"></span>O<span class="_ _4"> </span>F<span class="_ _4"> </span>E<span class="_ _4"> </span>S<span class="_ _4"> </span>S<span class="_ _1"></span>I<span class="_ _4"> </span>O<span class="_ _4"> </span>N<span class="_ _4"> </span>A<span class="_ _1"></span>L<span class="_ _4"> </span> <span class="_ _4"> </span>E<span class="_ _4"> </span>X<span class="_ _1"></span>P<span class="_ _4"> </span>E<span class="_ _4"> </span>R<span class="_ _4"> </span>I<span class="_ _1"></span>E<span class="_ _5"> </span>N<span class="_ _0"></span>C<span class="_ _4"> </span>E<span class="_ _5"> </span><span class="ff2 fs1 fc1"> </span></div><div class="t m0 x1 hb y1f ff1 fs5 fc1 sc0 ls0 ws0">Official Amba<span class="_ _3"></span>ssador <span class="ff6">–</span> IC<span class="_ _3"></span>T Olympiad B<span class="_ _3"></span>angladesh<span class="_ _3"></span> (ICTOB<span class="_ _3"></span>), Season <span class="_ _3"></span>3<span class="ff2 fs1"> <span class="_ _7"> </span><span class="ff3 fc3">December, 2025</span> <span class="ff4">–</span> Pre<span class="_ _2"></span>sent </span></div><div class="t m0 x1 h6 y20 ff3 fs1 fc4 sc0 ls0 ws0">ICT Olympiad Banglad<span class="_ _2"></span>esh<span class="ff2 fc1"> </span></div><div class="t m0 x5 ha y21 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Represent ICTOB a<span class="_ _2"></span>s an official ambassador for S<span class="_ _2"></span>eason 3 of th<span class="_ _2"></span>e Olympiad<span class="_ _2"></span> </span></span></div><div class="t m0 x5 ha y22 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Support and<span class="_ _2"></span> take part in webinars and o<span class="_ _2"></span>utreach activities organized b<span class="_ _2"></span>y ICTOB<span class="_ _2"></span> </span></span></div><div class="t m0 x5 ha y23 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Reached 20+ Participants fro<span class="_ _2"></span>m my own campu<span class="_ _2"></span>s<span class="_ _2"></span> </span></span></div><div class="t m0 x5 ha y24 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Actively moderated the <span class="_ _2"></span>students participat<span class="_ _2"></span>ing from my cam<span class="_ _2"></span>pus<span class="_ _2"></span> </span></span></div><div class="t m0 x1 hb y25 ff1 fs5 fc1 sc0 ls0 ws0">Media &amp; Con<span class="_ _3"></span>tent Generat<span class="_ _3"></span>ion Execut<span class="_ _3"></span>ive<span class="ff2 fs1"> <span class="_ _8"> </span><span class="ff3 fc3">May, 2026</span> <span class="ff4">–</span> <span class="ff3 fc3">August, 20<span class="_ _2"></span>26</span><span class="ls5">  </span>(4 month<span class="_ _2"></span>s) </span></div><div class="t m0 x1 h6 y26 ff3 fs1 fc4 sc0 ls0 ws0">ENgenuine Tech<span class="_ _2"></span>nology<span class="ff2 fc1"> </span></div><div class="t m0 x5 ha y27 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Created media and co<span class="_ _2"></span>ntent materials for the organization<span class="_ _9"></span> </span></span></div><div class="t m0 x5 ha y28 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Produced video and d<span class="_ _2"></span>esign assets using CapCut an<span class="_ _2"></span>d Canva<span class="_ _2"></span> </span></span></div><div class="t m0 x5 ha y29 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Contributed ideas and<span class="_ _2"></span> creative direction for brand<span class="_ _2"></span>ing and co<span class="_ _2"></span>mmunicatio<span class="_ _2"></span>n </span></span></div><div class="t m0 x5 ha y2a ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Reached 15+ new activ<span class="_ _2"></span>e learners for the cour<span class="_ _2"></span>ses<span class="_ _2"></span> </span></span></div><div class="t m0 x5 ha y2b ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Promoted their opportu<span class="_ _2"></span>nities across social <span class="_ _2"></span>medias for better reach<span class="_ _2"></span> </span></span></div><div class="t m0 x1 hb y2c ff1 fs5 fc1 sc0 ls0 ws0">Course Men<span class="_ _3"></span>tor <span class="ff6">–</span> &quot;Unlock <span class="_ _3"></span>English&quot;<span class="_ _3"></span> Course<span class="ff2 fs1"> <span class="_ _a"> </span><span class="ff3 fc3">September, 2026<span class="_ _2"></span></span> <span class="ff4">–</span> Present<span class="ff1"> </span></span></div><div class="t m0 x1 h6 y2d ff3 fs1 fc4 sc0 ls0 ws0">Campus Program <span class="ff1">(D<span class="_ _2"></span>USC)<span class="ff2 fc1"> </span></span></div><div class="t m0 x5 ha y2e ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Mentored High Section <span class="_ _2"></span>students in th<span class="_ _2"></span>e Unlock E<span class="_ _2"></span>nglish course </span></span></div><div class="t m0 x5 ha y2f ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Supported students in<span class="_ _2"></span> improving English com<span class="_ _2"></span>munication and<span class="_ _2"></span> fluency<span class="_ _2"></span> </span></span></div><div class="t m0 x5 ha y30 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Engaged with students for th<span class="_ _2"></span>eir better learning en<span class="_ _2"></span>vironment<span class="_ _2"></span> </span></span></div><div class="t m0 x5 ha y31 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Conducted 15+ Session<span class="_ _2"></span>s with 50+ Students <span class="_ _2"></span>from High Section<span class="_ _2"></span> Students<span class="_ _2"></span> </span></span></div><div class="t m0 x8 h6 y32 ff2 fs1 fc1 sc0 ls0 ws0"> </div></div></div><div class="pi" data-data='{"ctm":[1.500000,0.000000,0.000000,1.500000,0.000000,0.000000]}'></div></div>
+<div id="pf2" class="pf w0 h0" data-page-no="2"><div class="pc pc2 w0 h0"><img class="bi x0 y0 w1 h1" alt="" src="assets/asset_12.png"/><div class="c x0 y0 w4 h0"><div class="t m0 x1 h8 y33 ff1 fs4 fc0 sc0 ls0 ws0">T<span class="_ _1"></span>E<span class="_ _4"> </span>C<span class="_ _4"> </span>H<span class="_ _4"> </span>N<span class="_ _4"></span>I<span class="_ _1"></span>C<span class="_ _4"> </span>A<span class="_ _4"> </span>L<span class="_ _4"> </span> <span class="_ _4"> </span>S<span class="_ _1"></span>K<span class="_ _4"> </span>I<span class="_ _4"> </span>L<span class="_ _4"> </span>L<span class="_ _4"> </span>S<span class="_ _4"> </span><span class="ff2 fs1 fc1"> </span></div><div class="t m0 x1 h6 y34 ff1 fs1 fc0 sc0 lsa ws0">AI<span class="lsb">: <span class="ff2 fc1 ls0">AI Utilization, <span class="_ _2"></span><span class="ls6">AI</span> Automation,<span class="_ _2"></span> Prompt E<span class="_ _2"></span>ngineering, AI-Assisted Web <span class="_ _2"></span>Development<span class="_ _2"></span></span><span class="ls0"> </span></span></div><div class="t m0 x1 h6 y35 ff1 fs1 fc0 sc0 ls0 ws0">Programming<span class="lsb">: </span><span class="ff2 fc1">Py<span class="_ _2"></span>thon, C++, Ty<span class="_ _2"></span>peScript </span></div><div class="t m0 x1 h6 y36 ff1 fs1 fc0 sc0 ls0 ws0">Creative Design<span class="lsb">: </span><span class="ff2 fc1">UI/<span class="_ _2"></span>UX Design<span class="_ _2"></span>ing, Blender 3D Modeling, Fr<span class="_ _2"></span>ontend Develop<span class="_ _2"></span>ment (AI-A<span class="_ _2"></span>ssisted)</span> </div><div class="t m0 x1 h6 y37 ff1 fs1 fc0 sc0 ls0 ws0">IoT &amp; Hardware<span class="lsb">: </span><span class="ff2 fc1">De<span class="_ _2"></span>velopment b<span class="_ _2"></span>oards, Microcon<span class="_ _2"></span>trollers, IoT project de<span class="_ _2"></span>velopment, Ad<span class="_ _2"></span>vanced Electronics<span class="_ _2"></span></span> </div><div class="t m0 x1 h6 y38 ff1 fs1 fc0 sc0 ls0 ws0">Documentation<span class="_ _2"></span>: <span class="ff2 fc1">Technical document writing<span class="_ _2"></span><span class="lsc">, </span>proper docu<span class="_ _2"></span>menting methods, id<span class="_ _2"></span>eal document presenting<span class="_ _9"></span></span> </div><div class="t m0 x1 h8 y39 ff1 fs4 fc0 sc0 ls0 ws0">C<span class="_ _4"> </span>O<span class="_ _1"></span>R<span class="_ _4"> </span>E<span class="_ _4"> </span> <span class="_ _4"> </span>S<span class="_ _1"></span>K<span class="_ _4"> </span>I<span class="_ _4"> </span>L<span class="_ _4"> </span>L<span class="_ _4"> </span>S<span class="_ _4"> </span><span class="ff2 fs1 fc1"> </span></div><div class="t m0 x1 h4 y3a ff1 fs1 fc0 sc0 ls0 ws0">Creative Art &amp; Digital M<span class="_ _2"></span>edia </div><div class="t m0 x1 h6 y3b ff2 fs1 fc1 sc0 ls0 ws0">Professional video editing (<span class="_ _2"></span>CapCut), <span class="_ _2"></span>3d Commercial Animati<span class="_ _2"></span>on, <span class="_ _2"></span><span class="ff3">Graphic Design a<span class="_ _2"></span>nd Branding<span class="_ _2"></span> materials (Canva), them<span class="_ _2"></span>e-</span></div><div class="t m0 x1 h6 y3c ff3 fs1 fc1 sc0 ls0 ws0">based presentation<span class="_ _2"></span>s<span class="ff2">,<span class="ff1"> </span>English Article Writin<span class="_ _2"></span>g, Creative Story<span class="_ _2"></span> Writing<span class="_ _2"></span> </span></div><div class="t m0 x1 h4 y3d ff1 fs1 fc0 sc0 ls0 ws0">Business </div><div class="t m0 x1 h6 y3e ff2 fs1 fc1 sc0 ls0 ws0">Marketing, Strategic <span class="_ _2"></span>Business Plann<span class="_ _2"></span>ing, Idea Generation<span class="_ _2"></span>, Startups </div><div class="t m0 x1 h4 y3f ff1 fs1 fc0 sc0 ls0 ws0">Management<span class="_ _2"></span> </div><div class="t m0 x1 h6 y40 ff2 fs1 fc1 sc0 lsd ws0">Pro<span class="ls0">fessional Project <span class="_ _2"></span>Management (Goo<span class="_ _2"></span>gle certified), E<span class="_ _2"></span>vent Management<span class="_ _2"></span> </span></div><div class="t m0 x1 h4 y41 ff1 fs1 fc0 sc0 ls0 ws0">Communication </div><div class="t m0 x1 h6 y42 ff1 fs1 fc1 sc0 ls0 ws0">Professional Pitching an<span class="_ _2"></span>d Presentat<span class="_ _2"></span>ion<span class="ff2 lsc">, <span class="ls0">Storytelling, Flu<span class="_ _2"></span>ent English, Influencing <span class="_ _2"></span>Speaker </span></span></div><div class="t m0 x1 h8 y43 ff1 fs4 fc0 sc0 ls0 ws0">P<span class="_ _4"> </span>R<span class="_ _1"></span>O<span class="_ _4"> </span>J<span class="_ _4"> </span>E<span class="_ _4"> </span>C<span class="_ _1"></span>T<span class="_ _5"> </span>S<span class="_ _1"></span><span class="ff2 fs1 fc1"> </span></div><div class="t m0 x1 hb y44 ff1 fs5 fc1 sc0 ls0 ws0">IoT Project 1<span class="_ _3"></span> <span class="ff6">–<span class="ff3 fc3 lse">  </span></span>Soil Mois<span class="_ _3"></span>ture Mon<span class="_ _3"></span>itoring <span class="_ _3"></span>System <span class="ff3">(Champion<span class="_ _3"></span>, DUSC Scien<span class="_ _3"></span>ce Fair)<span class="ff2 fs1"> <span class="_ _b"> </span><span class="ff3 fc3 ls7">2025</span></span><span class="ff1"> </span></span></div><div class="t m0 x5 ha y45 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="fc1">An Arduino Nano-<span class="_ _2"></span>based soil m<span class="_ _2"></span>oisture monitoring s<span class="_ _2"></span>ystem <span class="_ _2"></span>that measures soil m<span class="_ _2"></span>oisture levels and displ<span class="_ _2"></span>ays </span></span></div><div class="t m0 x8 ha y46 ff5 fs1 fc1 sc0 ls0 ws0">the percentage in re<span class="_ _2"></span>al time on an LCD<span class="_ _2"></span> screen to suppo<span class="_ _2"></span>rt smarter agricult<span class="_ _2"></span>ural decisions.<span class="_ _9"></span><span class="ff2"> </span></div><div class="t m0 x1 hb y47 ff1 fs5 fc1 sc0 ls0 ws0">IoT Project 2<span class="_ _3"></span> <span class="ff6">–</span> Village-Net<span class="_ _3"></span> <span class="ff3 lsf">(2</span></div><div class="t m0 x9 hc y48 ff3 fs6 fc1 sc0 ls10 ws0">nd</div><div class="t m0 xa h6 y47 ff3 fs5 fc1 sc0 ls0 ws0"> Winner,<span class="_ _3"></span> DUSC Science<span class="_ _3"></span> Fair)<span class="ff2 fs1"> <span class="_ _c"> </span><span class="ff3 fc3 ls7">2026</span></span><span class="fc3"> </span></div><div class="t m0 x5 ha y49 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">Village-Net: An IoT-bas<span class="_ _2"></span>ed smart <span class="_ _2"></span>village monitoring syst<span class="_ _2"></span>em using ESP32, ra<span class="_ _2"></span>in and environmenta<span class="_ _2"></span>l sensors, ultrasonic </span></span></div><div class="t m0 x8 h6 y4a ff2 fs1 fc1 sc0 ls0 ws0">sensors, and servo motor<span class="_ _2"></span>s for climate resilienc<span class="_ _2"></span>e.<span class="_ _2"></span> </div><div class="t m0 x1 h4 y4b ff1 fs1 fc1 sc0 ls0 ws0"> </div><div class="t m0 x1 h4 y4c ff1 fs1 fc1 sc0 ls0 ws0">Software Project: DUSC<span class="_ _2"></span> Classro<span class="_ _2"></span>om; EMS and<span class="_ _2"></span> CMS School Management <span class="_ _2"></span>System (Pr<span class="_ _2"></span>ototype) </div><div class="t m0 x5 ha y4d ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc6">https://dusc.site/<span class="fc1"> <span class="_ _2"></span> </span></span></span></div><div class="t m0 x1 h8 y4e ff1 fs4 fc0 sc0 ls0 ws0">E<span class="_ _1"></span>D<span class="_ _4"> </span>U<span class="_ _4"> </span>C<span class="_ _4"> </span>A<span class="_ _4"></span>T<span class="_ _1"></span>I<span class="_ _4"> </span>O<span class="_ _4"> </span>N<span class="_ _4"> </span><span class="ff2 fs1 fc1"> </span></div><div class="t m0 x1 h4 y4f ff7 fs1 fc1 sc0 ls0 ws0">Grade 6 Student <span class="_ _2"></span>| National Curriculum and Textbo<span class="_ _2"></span>ok Board (NCTB)<span class="_ _9"></span> </div><div class="t m0 x1 h4 y50 ff7 fs1 fc1 sc0 ls0 ws0">Daffodil University S<span class="_ _2"></span>chool &amp; College (DUSC)<span class="_ _2"></span> </div><div class="t m0 x1 h6 y51 ff2 fs7 fc7 sc0 ls0 ws0">Ashulia, Savar, Dhaka, Bangladesh-<span class="ls11">1341</span><span class="fs1 fc1"> <span class="_ _d"> </span><span class="ff3 fc3">Expected Co<span class="_ _2"></span>mpletion: 2030 (SSC)</span><span class="ff7"> </span></span></div><div class="t m0 x1 h8 y52 ff1 fs4 fc0 sc0 ls0 ws0">C<span class="_ _1"></span>E<span class="_ _4"> </span>R<span class="_ _4"> </span>T<span class="_ _4"> </span>I<span class="_ _4"> </span>F<span class="_ _1"></span>I<span class="_ _4"> </span>C<span class="_ _4"> </span>A<span class="_ _4"></span>T<span class="_ _1"></span>I<span class="_ _5"> </span>O<span class="_ _1"></span>N<span class="_ _1"></span>S<span class="_ _5"> </span><span class="ff2 fs1 fc1"> </span></div></div><div class="c x1 y53 w5 hd"><div class="t m0 xb ha y54 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff1 fc1">Google Project Man<span class="_ _2"></span>agement Certification (Fun<span class="_ _2"></span>damental<span class="_ _2"></span>s, Initiation, P<span class="_ _2"></span>lanning)<span class="ff2"> </span></span></span></div><div class="t m0 xb ha y55 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff1 fc1">Google AI Professional Certi<span class="_ _2"></span>ficate<span class="_ _2"></span> </span></span></div><div class="t m0 xc h6 y56 ff2 fs7 fc6 sc0 ls0 ws0">https://coursera.org/share/80155e4778dfb779d7dc8be4d81735fb<span class="fs1 fc1">  </span></div><div class="t m0 xb ha y57 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff1 fc1">IBM<span class="lsb">: </span>Python for<span class="_ _2"></span> Data Science, AI &amp; Developm<span class="_ _2"></span>ent<span class="_ _2"></span> Certificate </span></span></div><div class="t m0 xc h4 y58 ff2 fs7 fc6 sc0 ls0 ws0">https://coursera.org/share/c92350ac517bf52e675930b26c13afd3<span class="ff1 fs1 fc1"> </span></div><div class="t m0 xb ha y59 ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff1 fc1">Bangladesh Cyber Institu<span class="_ _2"></span>te<span class="ff2">: Cy<span class="_ _2"></span>ber Security Bootcamp Certif<span class="_ _2"></span>icate<span class="_ _2"></span></span> </span></span></div><div class="t m0 xb ha y5a ff4 fs1 fc0 sc0 ls0 ws0">•<span class="ff5"> <span class="_ _6"> </span><span class="ff2 fc1">20+ additional certificate<span class="_ _2"></span>s across <span class="_ _2"></span>various fields<span class="ff1"> </span></span></span></div><div class="t m0 x0 h4 y5b ff1 fs1 fc0 sc0 ls0 ws0">View all certificates: </div><div class="t m0 x0 he y5c ff2 fs8 fc6 sc0 ls0 ws0">https://dri<span class="_ _3"></span>ve.google.com/driv<span class="_ _3"></span>e/folders/1wRCflgHsva<span class="_ _3"></span>mgKar8LTa8XALt<span class="_ _3"></span>5Y7DnXnu?us<span class="_ _3"></span>p=sharing </div><div class="t m0 x0 h6 y5d ff1 fs1 fc1 sc0 ls0 ws0">Credly<span class="ff2 ls12">: <span class="fc6 ls0">http<span class="_ _2"></span>s://www.credly.c<span class="_ _2"></span>om/users/nabisamiun<span class="_ _2"></span><span class="fc1">  </span></span></span></div></div><div class="c xd y53 w6 hd"><div class="t m0 x0 h6 y5e ff2 fs1 fc1 sc0 ls0 ws0"> </div></div><div class="c x0 y0 w4 h0"><div class="t m0 x1 h8 y5f ff1 fs4 fc0 sc0 ls0 ws0">L<span class="_ _4"> </span>A<span class="_ _1"></span>N<span class="_ _4"> </span>G<span class="_ _4"> </span>U<span class="_ _4"> </span>A<span class="_ _4"></span>G<span class="_ _1"></span>E<span class="_ _4"> </span>S<span class="_ _4"> </span><span class="ff2 fs1 fc1"> </span></div><div class="t m0 x1 h6 y30 ff1 fs1 fc1 sc0 ls0 ws0">English<span class="ff2"> <span class="ff4">–</span> Proficient  |  <span class="_ _2"></span></span>Bengali<span class="ff2"> <span class="ff4">–</span> N<span class="_ _2"></span>ative  | </span></div><div class="t m0 x1 h6 y60 ff1 fs1 fc1 sc0 ls0 ws0">Spanish <span class="ff4">–<span class="ff2"> Basic  |  </span></span>Ital<span class="_ _2"></span>ian <span class="ff4">–<span class="ff2"> Conversation<span class="_ _2"></span>al  |  </span></span><span class="lsa">Ar<span class="_ _2"></span></span>abic<span class="ff2"> <span class="ff4">–</span> Conversational  |  <span class="_ _2"></span></span>Hindi<span class="ff2"> <span class="ff4">–</span> Fluent  |<span class="_ _2"></span> </span></div></div><a class="l" href="https://dusc.site/"><div class="d m1" style="border-style:none;position:absolute;left:98.625000px;bottom:578.535000px;width:75.580000px;height:14.210000px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://coursera.org/share/80155e4778dfb779d7dc8be4d81735fb"><div class="d m1" style="border-style:none;position:absolute;left:99.375000px;bottom:363.885000px;width:248.840000px;height:12.990000px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://coursera.org/share/c92350ac517bf52e675930b26c13afd3"><div class="d m1" style="border-style:none;position:absolute;left:99.375000px;bottom:326.100000px;width:246.240000px;height:12.980000px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://drive.google.com/drive/folders/1wRCflgHsvamgKar8LTa8XALt5Y7DnXnu?usp=sharing"><div class="d m1" style="border-style:none;position:absolute;left:72.375000px;bottom:247.515000px;width:307.860000px;height:9.770000px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://www.credly.com/users/nabisamiun"><div class="d m1" style="border-style:none;position:absolute;left:119.440500px;bottom:223.200000px;width:181.113000px;height:16.210000px;background-color:rgba(255,255,255,0.000001);"></div></a></div><div class="pi" data-data='{"ctm":[1.500000,0.000000,0.000000,1.500000,0.000000,0.000000]}'></div></div>
+</div>
+<div class="loading-indicator">
+<img alt="" src="assets/asset_13.png"/>
+</div>
+</body>
+</html>
